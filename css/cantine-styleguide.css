@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: Impact;
+    color: white;
+    font-size: 100px;
+    font-stretch: extra-expanded;
+}
+
+.round-button {
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 100px; /* Adjust the border-radius to make it round */
+    background-color: orangered; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none;
+    font-family: "Agency FB";
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+.round-button:hover {
+    background-color: white; /* Button color on hover */
+    color: orangered; /* Text color */
+}
+
+.image-container {
+    margin-top: 20px; /* Adjust as needed */
+}
