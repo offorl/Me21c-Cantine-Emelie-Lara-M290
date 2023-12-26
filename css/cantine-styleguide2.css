@@ -28,7 +28,17 @@ header {
     padding-left: 5%;
 }
 
+.contentCM {
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    padding-left: 0%;
+}
 
+.formCM{
+    display: flex;
+    justify-content: center;
+}
 #title {
  font-size: 800%;
  font-family: 'Impact', sans-serif;
@@ -43,8 +53,27 @@ header {
     font-family: Arial, sans-serif;
 }
 
+.ueschriftCM{
+    color: white;
+    padding-right: 30px;
+    font-size: 24px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
 .field{
     width: 500px;
+    padding: 10px;
+    background-color: #FFA500;
+    border: 1px solid #FFA500;
+    border-radius: 150px;
+    transition: background-color 0.3s;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dropdown{
+    width: 520px;
     padding: 10px;
     background-color: #FFA500;
     border: 1px solid #FFA500;
@@ -70,6 +99,7 @@ header {
 }
 
 /*
+    background-color: rgb(256,256,256,0.4);
 .input-group {
  margin-bottom: 20px;
 }

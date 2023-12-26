@@ -14,49 +14,66 @@
         <a href="#" id="logo">Your Logo</a>
     </div>
 </header>
-<div class="content">
+
+
+<div class="contentCM">
 <h1 id="title">New Menu</h1>
-<form class="form" action="createmenu.php" method="post" >
+<form class="formCM" action="createmenu.php" method="post" >
     <table>
         <tr>
-            <td class="ueschrift">Name</td>
+            <td class="ueschriftCM">Name</td>
             <td>
                 <input class="field" type="text" name="name">
             </td>
         </tr>
 
         <tr>
-            <td class="ueschrift">Wochentag</td>
+            <td class="ueschriftCM">Wochentag</td>
             <td>
-                <input class="field" type="dropdown" name="day">
+                <select name="Wochentag" class="dropdown" type="dropdown" name="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="" selected></option>
+                </select>
             </td>
         </tr>
 
 
         <tr>
-            <td class="ueschrift">Beschreibung</td>
+            <td class="ueschriftCM">Beschreibung</td>
             <td>
                 <input class="field" type="text" name="beschreibung">
             </td>
         </tr>
 
         <tr>
-            <td class="ueschrift">Preis</td>
+            <td class="ueschriftCM">Preis</td>
             <td>
                 <input class="field" type="text" name="preis">
             </td>
         </tr>
 
         <tr>
-            <td class="ueschrift">Spezielle Anforderungen</td>
+            <td class="ueschriftCM">Spezielle Anforderungen</td>
             <td>
-                <input class="field" type="dropdown" name="spezielle anforderungen">
+                <select name="spezielle anforderungen" class="dropdown" type="dropdown" name="spezielle anforderungen">
+                    <option value="vegan">vegan</option>
+                    <option value="vegetarier">vegetarier</option>
+                    <option value="halal">halal</option>
+                    <option value="kosher">kosher</option>
+                    <option value="laktosefrei">laktosefrei</option>
+                    <option value="" selected></option>
+                </select>
             </td>
         </tr>
 
     </table>
 </form>
 <button id="submit-button">submit</button>
+
 
 </div>
 
