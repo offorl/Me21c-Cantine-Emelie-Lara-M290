@@ -1,0 +1,107 @@
+body {
+    background: url("../images/cantina-bg.png") center/cover fixed no-repeat;
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.content {
+ text-align: left;
+ color: white;
+ margin-top: 10%;
+    padding-left: 5%;
+}
+
+
+#title {
+ font-size: 800%;
+ font-family: 'Impact', sans-serif;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.ueschrift{
+    color: white;
+    padding-right: 30px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.field{
+    width: 500px;
+    padding: 10px;
+    background-color: #FFA500;
+    border: 1px solid #FFA500;
+    border-radius: 150px;
+    transition: background-color 0.3s;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#submit-button {
+    justify-self: start;
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 150px;
+    font-family: 'Impact', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 10%;
+}
+
+/*
+.input-group {
+ margin-bottom: 20px;
+}
+
+label {
+ display: block;
+ margin-bottom: 5px;
+}
+
+.input-container {
+ display: flex;
+ align-items: center;
+}
+
+.custom-input {
+ width: 500px;
+ padding: 8px;
+ background-color: #FFA500;
+ border: 1px solid #FFA500;
+ border-radius: 150px;
+ transition: background-color 0.3s;
+ float: left;
+ margin-top: 6px;
+}
+
+.custom-input:hover {
+ background-color: #FFD700;
+}
+
+.input-text {
+ margin-left: 10px;
+}
+**/
+
+

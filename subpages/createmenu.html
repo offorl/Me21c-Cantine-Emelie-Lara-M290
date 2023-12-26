@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cantine-styleguide2.css">
+    <title>createMenu</title>
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+        <a href="#" id="logo">Your Logo</a>
+    </div>
+</header>
+<div class="content">
+<h1 id="title">New Menu</h1>
+<form class="form" action="createmenu.php" method="post" >
+    <table>
+        <tr>
+            <td class="ueschrift">Name</td>
+            <td>
+                <input class="field" type="text" name="name">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="ueschrift">Wochentag</td>
+            <td>
+                <input class="field" type="dropdown" name="day">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="ueschrift">Beschreibung</td>
+            <td>
+                <input class="field" type="text" name="beschreibung">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="ueschrift">Preis</td>
+            <td>
+                <input class="field" type="text" name="preis">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="ueschrift">Spezielle Anforderungen</td>
+            <td>
+                <input class="field" type="dropdown" name="spezielle anforderungen">
+            </td>
+        </tr>
+
+    </table>
+</form>
+<button id="submit-button">submit</button>
+
+</div>
+
+</body>
+
+</html>
+
