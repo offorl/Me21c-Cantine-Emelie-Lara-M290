@@ -50,19 +50,8 @@ app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
-app.get('/gericht', (req, res) => {
-    connection.query('SELECT * FROM gericht', [req.params.id], (err, rows, fields) => {
-        if (!err) {
-            console.log(rows);
-            res.send(rows);
-        } else {
-            console.log(err);
-        }
-
-    })
-});
-app.get('/gericht/:id', (req, res) => {
-    connection.query('SELECT * FROM gericht WHERE id = ?', [req.params.id], (err, rows, fields) => {
+app.get('/WochenMenu', (req, res) => {
+    connection.query('SELECT * FROM WochenMenu', [req.params.id], (err, rows, fields) => {
         if (!err) {
             console.log(rows);
             res.send(rows);
@@ -73,8 +62,22 @@ app.get('/gericht/:id', (req, res) => {
     })
 });
 
-app.delete('/gericht/:id', (req, res) => {
-    connection.query(' DELETE FROM user WHERE id = ? ', [req.params.id], (err, rows, fields) => {
+
+
+app.get('/WochenMenu/:WochenMenuID', (req, res) => {
+    connection.query('SELECT * FROM WochenMenu WHERE WochenMenuID = ?', [req.params.WochenMenuID], (err, rows, fields) => {
+        if (!err) {
+            console.log(rows);
+            res.send(rows);
+        } else {
+            console.log(err);
+        }
+
+    })
+});
+
+app.delete('/WochenMenu/:Woche', (req, res) => {
+    connection.query(' DELETE FROM WochenMenu WHERE Woche = ? ', [req.params.Woche], (err, rows, fields) => {
         if (!err) {
             res.send('Delete operation was successful')
             // res.send(rows)
@@ -84,5 +87,6 @@ app.delete('/gericht/:id', (req, res) => {
 
     })
 });
+
 
 

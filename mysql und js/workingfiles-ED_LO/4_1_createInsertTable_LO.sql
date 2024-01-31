@@ -17,7 +17,7 @@ DROP TABLE IF EXISTS SpezielleAnforderungen;
 -- 4.3 Anlegen der Tabellen
 -- ---------------------------------------------------------------------------------------------------------------------
 
--- Tabelle ArchiviertePlaene
+-- Tabelle Wochenmenu
 CREATE TABLE WochenMenu (
                             WochenMenuID INT PRIMARY KEY,
                             Woche DATE NOT NULL,
