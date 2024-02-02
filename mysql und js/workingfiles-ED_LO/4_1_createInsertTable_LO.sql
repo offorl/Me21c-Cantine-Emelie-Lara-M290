@@ -78,7 +78,7 @@ INSERT INTO WochenMenu (WochenMenuID, Woche, Budget) VALUES
                                                          (7, '2024-01-22', 800.00),
                                                          (8, '2024-01-29', 1150.00),
                                                          (9, '2024-02-05', 950.00),
-                                                         (10, '2024-02-12', 1000.00);
+                                                         (10,'2024-02-12', 1000.00);
 
 -- Beispiel Daten für ArchiviertePlaene
 INSERT INTO ArchiviertePlaene (ArchivID, WochenMenuID, Archivierungsdatum) VALUES

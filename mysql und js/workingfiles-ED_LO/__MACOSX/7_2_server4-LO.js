@@ -90,3 +90,40 @@ app.delete('/WochenMenu/:Woche', (req, res) => {
 
 
 
+app.get('/User', (req, res) => {
+    connection.query('SELECT * FROM User', [req.params.id], (err, rows, fields) => {
+        if (!err) {
+            console.log(rows);
+            res.send(rows);
+        } else {
+            console.log(err);
+        }
+
+    })
+});
+
+app.get('/User/:UserID', (req, res) => {
+    connection.query('SELECT * FROM User WHERE UserID = ?', [req.params.UserID], (err, rows, fields) => {
+        if (!err) {
+            console.log(rows);
+            res.send(rows);
+        } else {
+            console.log(err);
+        }
+
+    })
+});
+
+
+app.delete('/User/:UserID', (req, res) => {
+    connection.query(' DELETE FROM User WHERE UserID = ? ', [req.params.UserID], (err, rows, fields) => {
+        if (!err) {
+            res.send('Delete operation was successful')
+            // res.send(rows)
+        } else {
+            console.log(err);
+        }
+
+    })
+});
+
